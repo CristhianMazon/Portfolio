@@ -1,5 +1,5 @@
 body {
-    background: url('../img/fundo.png') no-repeat center center fixed;
+  background: black url('../img/fundo.png') no-repeat center center fixed;
     background-size: cover;
     color: #EAEAEA;
     margin: 0;
@@ -83,10 +83,20 @@ body {
 
   .section {
     padding: 80px 10vw;
-    background-color: rgba(0, 0, 0, 0.6); /* fundo semi-transparente pra destacar do background */
+    background-color: rgba(0, 0, 0, 0.6);
     margin-bottom: 60px;
     border-left: 5px solid #00ff99;
+    border-right: 5px solid #00ff99;
+
     border-radius: 10px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   .section h2 {
@@ -179,3 +189,29 @@ body {
 .contact-list a:hover {
   text-decoration: underline;
 }
+
+/* Scrollbar para navegadores WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Torna o fundo da track invisível */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00ff99; /* Cor verde neon */
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.8); /* Cria um "espacinho" ao redor, como se fosse sombreado */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00cc77; /* Tom mais escuro no hover */
+}
+
+/* Scrollbar para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00ff99 transparent;
+}
+
