@@ -136,4 +136,30 @@ body {
     min-width: 20px;
     font-size: 1.2rem;
   }
+
+  .project-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .project-list li {
+    margin-bottom: 30px;
+  }
+  
+  .project-list a {
+    color: #00ff99;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .project-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .project-list span {
+    display: block;
+    color: #ccc;
+    margin-top: 5px;
+    font-size: 0.95rem;
+  }
   
