@@ -3,6 +3,7 @@ const subtitle = "Estudante de ADS — bem-vindo ao meu portfólio digital";
 
 const titleElement = document.getElementById("typewriter-title");
 const subtitleElement = document.getElementById("typewriter-subtitle");
+const fotoContainer = document.querySelector(".foto-container");
 
 let i = 0;
 let j = 0;
@@ -29,6 +30,8 @@ function typeSubtitle() {
     setTimeout(typeSubtitle, 35);
   } else {
     subtitleElement.classList.remove("typing");
+    // Agora que terminou de digitar tudo, mostra a imagem!
+    fotoContainer.classList.add("show");
   }
 }
 
