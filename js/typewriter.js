@@ -1,5 +1,5 @@
 const title = "Olá, sou o Cristhian Silveira Mazon";
-const subtitle = "Estudante de ADS — bem-vindo ao meu portfólio digital.";
+const subtitle = "Estudante de ADS — bem-vindo ao meu portfólio digital";
 
 const titleElement = document.getElementById("typewriter-title");
 const subtitleElement = document.getElementById("typewriter-subtitle");
