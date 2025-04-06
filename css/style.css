@@ -5,6 +5,10 @@ body {
     margin: 0;
     font-family: 'Orbitron', sans-serif;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   .main-header {
     display: flex;
@@ -163,3 +167,15 @@ body {
     font-size: 0.95rem;
   }
   
+  .project-list a,
+.contact-list a {
+  color: #00ff99;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+}
+
+.project-list a:hover,
+.contact-list a:hover {
+  text-decoration: underline;
+}
