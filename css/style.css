@@ -1,259 +1,268 @@
+/* =================== [BASE GERAL DO SITE] =================== */
 body {
   background: black url('../img/fundo.png') no-repeat center center fixed;
-    background-size: cover;
-    color: #EAEAEA;
-    margin: 0;
-    font-family: 'Orbitron', sans-serif;
-  }
+  background-size: cover;
+  color: #EAEAEA;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  .main-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    min-height: 100vh;
-    padding-left: 10vw;
-  }
-  
-  .intro {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .headline,
-  .subheadline {
-    font-family: 'Orbitron', sans-serif;
-    white-space: nowrap;
-    overflow: hidden;
-    width: fit-content;
-    margin: 0;
-  }
-  
-  .headline.typing::after,
-  .subheadline.typing::after {
-    content: '|';
-    animation: blink-caret 0.75s step-end infinite;
-    margin-left: 2px;
-    color: #00ff99;
-  }
-  
-  .headline {
-    color: #00ff99;
-    font-size: 2.8rem;
-    letter-spacing: 2px;
-  }
-  
-  .subheadline {
-    color: #ffffff;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-  }
-  
-  .main-nav {
-    display: flex;
-    gap: 20px;
-    margin-top: 10px;
-    flex-wrap: wrap;
-  }
-  
-  .main-nav a {
-    text-decoration: none;
-    color: #00ff99;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .main-nav a:hover {
-    color: #ffffff;
-  }
-  
-  @keyframes blink-caret {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  .section {
-    padding: 80px 10vw;
-    background-color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 60px;
-    border-left: 5px solid #00ff99;
-    border-right: 5px solid #00ff99;
+/* =================== [CABEÇALHO E INTRODUÇÃO] =================== */
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  padding-left: 10vw;
+}
 
-    border-radius: 10px;
-    min-height: 100vh;
-    box-sizing: border-box;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .section h2 {
-    color: #00ff99;
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-  
-  .section p {
-    font-size: 1.1rem;
-    color: #ccc;
-    line-height: 1.8;
-  }
-  
-  .experience-item {
-    margin-bottom: 60px;
-  }
-  
-  .empresa {
-    color: #00ff99;
-    font-weight: bold;
-    font-size: 1.1rem;
-  }
-  
-  .cargo {
-    color: #cccccc;
-    font-weight: normal;
-    font-size: 1.1rem;
-  }
-  
-  .periodo-local {
-    color: #bbb;
-    font-style: italic;
-    margin-bottom: 10px;
-  }
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
-  .contact-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .contact-list li {
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .contact-list i {
-    color: #00ff99;
-    min-width: 20px;
-    font-size: 1.2rem;
-  }
+.headline,
+.subheadline {
+  font-family: 'Orbitron', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content;
+  margin: 0;
+}
 
-  .project-list {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .project-list li {
-    margin-bottom: 30px;
-  }
-  
-  .project-list a {
-    color: #00ff99;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .project-list a:hover {
-    text-decoration: underline;
-  }
-  
-  .project-list span {
-    display: block;
-    color: #ccc;
-    margin-top: 5px;
-    font-size: 0.95rem;
-  }
-  
-  .project-list a,
-.contact-list a {
+/* Animação de digitação com cursor piscando */
+.headline.typing::after,
+.subheadline.typing::after {
+  content: '|';
+  animation: blink-caret 0.75s step-end infinite;
+  margin-left: 2px;
+  color: #00ff99;
+}
+
+.headline {
+  color: #00ff99;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
+
+.subheadline {
+  color: #ffffff;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* =================== [NAVEGAÇÃO PRINCIPAL] =================== */
+.main-nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #00ff99;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #ffffff;
+}
+
+.main-nav a.active,
+.scroll-nav a.active {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #00ff99;
+}
+
+/* =================== [SEÇÕES GERAIS DO SITE] =================== */
+.section {
+  padding: 80px 10vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 60px;
+  border-left: 5px solid #00ff99;
+  border-right: 5px solid #00ff99;
+  border-radius: 10px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section h2 {
+  color: #00ff99;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+/* =================== [EXPERIÊNCIAS] =================== */
+.experience-item {
+  margin-bottom: 60px;
+}
+
+.empresa {
+  color: #00ff99;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.cargo {
+  color: #cccccc;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.periodo-local {
+  color: #bbb;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* =================== [PROJETOS] =================== */
+.project-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-list li {
+  margin-bottom: 30px;
+}
+
+.project-list a {
+  color: #00ff99;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-list a:hover {
+  text-decoration: underline;
+}
+
+.project-list span {
+  display: block;
+  color: #ccc;
+  margin-top: 5px;
+  font-size: 0.95rem;
+}
+
+/* =================== [CONTATO] =================== */
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-list i {
+  color: #00ff99;
+  min-width: 20px;
+  font-size: 1.2rem;
+}
+
+.contact-list a,
+.project-list a {
   color: #00ff99;
   font-weight: bold;
   font-family: 'Orbitron', sans-serif;
   text-decoration: none;
 }
 
-.project-list a:hover,
-.contact-list a:hover {
+.contact-list a:hover,
+.project-list a:hover {
   text-decoration: underline;
 }
 
-/* Scrollbar para navegadores WebKit (Chrome, Edge, Safari) */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent; /* Torna o fundo da track invisível */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #00ff99; /* Cor verde neon */
-  border-radius: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.8); /* Cria um "espacinho" ao redor, como se fosse sombreado */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #00cc77; /* Tom mais escuro no hover */
-}
-
-/* Scrollbar para Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #00ff99 transparent;
-}
-
-.main-header {
+/* =================== [SKILLS / HABILIDADES] =================== */
+.skills-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
-  padding-left: 10vw;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
+.skill {
+  color: #00ff99;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(0, 255, 153, 0.05);
+  border: 1px solid #00ff99;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+  background-color: rgba(0, 255, 153, 0.15);
+}
+
+/* =================== [BOTÃO DE DOWNLOAD] =================== */
+.btn-download,
+.download-btn {
+  display: inline-block;
+  color: #00ff99;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  border: 2px solid #00ff99;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-download:hover,
+.download-btn:hover {
+  background-color: #00ff99;
+  color: #000;
+}
+
+/* =================== [IMAGEM DO PERFIL LATERAL] =================== */
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* separa bem os dois lados */
+  justify-content: space-between;
   gap: 50px;
   flex-wrap: wrap;
-  flex-direction: row-reverse; /* <-- isso que joga a imagem pra direita */
+  flex-direction: row-reverse;
 }
 
-
-/* Container da imagem */
-/* Container da imagem lateral */
 .foto-lado {
   position: absolute;
-  right: 5vw;
+  right: 8vw;
   top: 50%;
   transform: translateY(-50%);
   opacity: 0;
-  animation: aparecerFotoQuadrada 1s ease forwards;
-  animation-delay: 3.5s; /* tempo certinho pra esperar a digitação terminar */
+  animation: aparecerFoto 1s ease-out forwards;
+  animation-delay: 5.2s;
   z-index: 1;
 }
 
-/* Animação da imagem quadrada */
-@keyframes aparecerFotoQuadrada {
-  to {
-    opacity: 1;
-  }
-}
-
-/* Moldura com estilo futurista/rústico */
 .moldura-quadrada {
   width: 190px;
   height: 190px;
@@ -268,7 +277,6 @@ body {
   backdrop-filter: blur(3px);
 }
 
-/* Imagem com bordas suaves e efeito ao passar o mouse */
 .foto-perfil-quadrada {
   width: 100%;
   height: 100%;
@@ -283,14 +291,14 @@ body {
   filter: brightness(1.1);
 }
 
-.foto-lado {
-  position: absolute;
-  right: 8vw;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0;
-  animation: aparecerFoto 1s ease-out forwards;
-  animation-delay: 5.2s; /* Ajusta o delay se quiser que apareça mais cedo ou mais tarde */
+/* =================== [ANIMAÇÕES E CURSORES] =================== */
+@keyframes blink-caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 @keyframes aparecerFoto {
@@ -302,4 +310,30 @@ body {
     opacity: 1;
     transform: translateY(-50%) translateX(0);
   }
+}
+
+/* =================== [SCROLL PERSONALIZADO] =================== */
+/* WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00ff99;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00cc77;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00ff99 transparent;
 }

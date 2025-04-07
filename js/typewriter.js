@@ -9,6 +9,8 @@ let i = 0;
 let j = 0;
 
 function typeTitle() {
+  if (!titleElement) return;
+
   titleElement.classList.add("typing");
   if (i < title.length) {
     titleElement.textContent += title.charAt(i);
@@ -23,6 +25,8 @@ function typeTitle() {
 }
 
 function typeSubtitle() {
+  if (!subtitleElement || !fotoContainer) return;
+
   subtitleElement.classList.add("typing");
   if (j < subtitle.length) {
     subtitleElement.textContent += subtitle.charAt(j);
@@ -30,9 +34,12 @@ function typeSubtitle() {
     setTimeout(typeSubtitle, 35);
   } else {
     subtitleElement.classList.remove("typing");
-    // Agora que terminou de digitar tudo, mostra a imagem!
     fotoContainer.classList.add("show");
   }
 }
 
-window.onload = typeTitle;
+window.addEventListener("DOMContentLoaded", () => {
+  if (titleElement && subtitleElement && fotoContainer) {
+    typeTitle();
+  }
+});

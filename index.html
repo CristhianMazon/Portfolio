@@ -10,41 +10,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- Cabeçalho -->
   <header class="main-header" id="Home">
     <div class="header-content">
-      
       <!-- Foto -->
       <div class="foto-lado">
-        <div class="moldura-quadrada">
+        <div class="moldura-quadrada foto-container">
           <img src="img/Eu.png" alt="Foto de Cristhian Mazon" class="foto-perfil-quadrada" />
         </div>
       </div>
-  
+
       <!-- Texto de introdução -->
       <div class="intro">
-        <h1 class="headline typing" id="typewriter-title"></h1>
+        <h1 class="headline" id="typewriter-title"></h1>
         <p class="subheadline" id="typewriter-subtitle"></p>
       </div>
-  
     </div>
-  
+
     <!-- Menu de navegação -->
     <nav class="main-nav">
       <a href="#Home">Home</a>
       <a href="#Sobre">Sobre</a>
+      <a href="#skills">Skills</a>
       <a href="#Experiências">Experiências</a>
       <a href="#Projetos">Projetos</a>
       <a href="#Contato">Contato</a>
     </nav>
   </header>
-  
-  
+
   <!-- Scroll header fixo -->
   <div id="scroll-header" class="scroll-header">
     <div class="logo">Cristhian</div>
     <nav class="scroll-nav">
       <a href="#Home">Home</a>
       <a href="#Sobre">Sobre</a>
+      <a href="#skills">Skills</a>
       <a href="#Experiências">Experiências</a>
       <a href="#Projetos">Projetos</a>
       <a href="#Contato">Contato</a>
@@ -59,6 +59,19 @@
     <p>Gosto de entender o "porquê" das coisas, aprender rápido, testar na prática e ir além do básico. Valorizo soluções criativas, organizadas e que realmente funcionem.</p>
     <p>No tempo livre, sou gamer raiz, amante de boas histórias (em filmes, séries ou animes) e me aventuro como criador de conteúdo no YouTube. Também compartilho projetos e estudos quando posso.</p>
     <p>Sigo buscando oportunidades na área de TI — seja em desenvolvimento, suporte ou implantação — onde eu possa aplicar meu conhecimento, crescer e fazer a diferença.</p>
+  </section>
+
+  <!-- Seção Skills -->
+  <section id="skills" class="section">
+    <h2>Habilidades</h2>
+    <div class="skills-container">
+      <div class="skill"><i class="fas fa-code"></i> HTML</div>
+      <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+      <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+    </div>
+    <a href="curriculo/Cristhian_Mazon.pdf" target="_blank" class="download-btn">
+      <i class="fas fa-download"></i> Baixar Currículo
+    </a>
   </section>
 
   <!-- Seção Experiências -->
@@ -93,7 +106,6 @@
   <!-- Seção Projetos -->
   <section id="Projetos" class="section">
     <h2>Projetos</h2>
-  
     <ul class="project-list">
       <li>
         <strong>Portfólio Pessoal</strong><br>
@@ -112,24 +124,21 @@
       </li>
     </ul>
   </section>
-  
 
   <!-- Seção Contato -->
   <section id="Contato" class="section">
     <h2>Contato</h2>
     <p>Você pode entrar em contato comigo através dos seguintes canais:</p>
-  
     <ul class="contact-list">
       <li>
         <i class="fas fa-envelope"></i>
         <strong>Email:</strong>
-        <a href="mailto:cristhian.mazon@email.com">cristhian.mazon@email.com</a>
+        <a href="mailto:cristhian.s.mazon@email.com">cristhian.s.mazon@email.com</a>
       </li>
       <li>
         <i class="fab fa-whatsapp"></i>
         <strong>WhatsApp:</strong>
-        <a href="https://wa.me/5547991328598?text=Ol%C3%A1%2C%20Cristhian!%20Vi%20seu%20portf%C3%B3lio%20e%20fiquei%20interessado%20no%20seu%20trabalho.%20Podemos%20conversar%3F"
-           target="_blank" rel="noopener">
+        <a href="https://wa.me/5547991328598?text=Ol%C3%A1%2C%20Cristhian!%20Vi%20seu%20portf%C3%B3lio%20e%20fiquei%20interessado%20no%20seu%20trabalho.%20Podemos%20conversar%3F" target="_blank" rel="noopener">
           (47) 99132-8598
         </a>
       </li>
@@ -149,8 +158,10 @@
       </li>
     </ul>
   </section>
+
   <!-- Scripts -->
   <script src="js/typewriter.js"></script>
   <script src="js/headerScroll.js"></script>
+  <script src="js/scroll-highlight.js"></script>
 </body>
 </html>
