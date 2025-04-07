@@ -194,8 +194,8 @@ html {
   text-decoration: underline;
 }
 
-/* =================== [SKILLS / HABILIDADES] =================== */
-.skills-container {
+/* =================== [HABILIDADES] =================== */
+.Habilidades-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -204,7 +204,7 @@ html {
   margin-bottom: 40px;
 }
 
-.skill {
+.Habilidades {
   color: #00ff99;
   font-weight: bold;
   font-size: 1.1rem;
@@ -218,7 +218,7 @@ html {
   transition: background-color 0.3s ease;
 }
 
-.skill:hover {
+.Habilidades:hover {
   background-color: rgba(0, 255, 153, 0.15);
 }
 
