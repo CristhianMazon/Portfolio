@@ -5,6 +5,7 @@ body {
   color: #EAEAEA;
   margin: 0;
   font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
 }
 
 html {
@@ -30,20 +31,23 @@ html {
 .headline,
 .subheadline {
   font-family: 'Orbitron', sans-serif;
-  white-space: nowrap;
-  overflow: hidden;
+  white-space: normal;            /* permite quebra de linha */
+  word-break: break-word;
+  overflow-wrap: break-word;
   width: fit-content;
   margin: 0;
 }
+
 
 /* Animação de digitação com cursor piscando */
 .headline.typing::after,
 .subheadline.typing::after {
   content: '|';
-  animation: blink-caret 0.75s step-end infinite;
   margin-left: 2px;
   color: #00ff99;
+  animation: blink-caret-fix 1s steps(1) infinite;
 }
+
 
 .headline {
   color: #00ff99;
@@ -81,6 +85,10 @@ html {
   text-decoration: underline;
   font-weight: bold;
   color: #00ff99;
+}
+
+.scroll-nav{
+  margin-right: 50px;
 }
 
 /* =================== [SEÇÕES GERAIS DO SITE] =================== */
@@ -292,12 +300,12 @@ html {
 }
 
 /* =================== [ANIMAÇÕES E CURSORES] =================== */
-@keyframes blink-caret {
+@keyframes blink-caret-fix {
   0%, 100% {
-    opacity: 0;
+    visibility: hidden;
   }
   50% {
-    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -336,4 +344,154 @@ html {
 * {
   scrollbar-width: thin;
   scrollbar-color: #00ff99 transparent;
+}
+
+@media screen and (max-width: 768px) {
+
+  .scroll-nav {
+    display: none;
+  }
+
+  #Sobre,
+  #Experiências,
+  #Projetos {
+    scroll-margin-top: 80px;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+  }
+
+  .section p,
+  .section li,
+  .job p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .headline,
+.subheadline {
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+  max-width: 90%;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  order: 1;
+}
+
+.subheadline {
+  font-size: 20px;
+}
+
+  .section {
+    border-left: none;
+    border-right: none;
+    padding: 0 15px;
+  }
+
+  #Contato {
+    padding: 20px 15px !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-list li {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 14px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-list i {
+    flex-shrink: 0;
+    min-width: 16px;
+    text-align: center;
+  }
+
+  .contact-list a {
+    color: #00ff99;
+    text-decoration: none;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  .foto-lado {
+    position: relative !important;
+    transform: none !important;
+    opacity: 0;
+    animation: aparecerFoto 1s ease-out forwards;
+    animation-delay: 1s;
+    margin: 50px auto 0 !important;
+    margin-right: 110px !important; /* mantido como você tinha */
+    display: block !important;
+    width: 140px !important;
+    max-width: 100%;
+    z-index: 1;
+    order: 2 !important;
+  }
+
+  @keyframes aparecerFotoMobile {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .main-nav,
+  .scroll-nav {
+    display: none;
+  }
+}
+
+/* Header fixo no topo */
+#scroll-header {
+  display: flex !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #00ff99;
+}
+
+.logo {
+  color: #00ff99;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+body {
+  padding-top: 60px;
 }

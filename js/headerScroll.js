@@ -1,9 +1,15 @@
 const scrollHeader = document.getElementById("scroll-header");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > window.innerHeight - 100) {
-    scrollHeader.classList.add("visible");
+  // Só aplica a lógica de mostrar/ocultar no desktop
+  if (window.innerWidth > 768) {
+    if (window.scrollY > window.innerHeight - 100) {
+      scrollHeader.classList.add("visible");
+    } else {
+      scrollHeader.classList.remove("visible");
+    }
   } else {
-    scrollHeader.classList.remove("visible");
+    // No mobile, força o header visível SEM depender da classe "visible"
+    scrollHeader.classList.add("visible");
   }
 });
