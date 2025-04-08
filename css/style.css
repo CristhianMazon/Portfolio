@@ -346,7 +346,79 @@ html {
   scrollbar-color: #00ff99 transparent;
 }
 
+/* =================== [BOTÃO HAMBÚRGUER] =================== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.menu-toggle span {
+  background-color: #00ff99;
+  height: 3px;
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: #000;
+  padding: 20px;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  z-index: 1000;
+  border-left: 1px solid #00ff99;
+  box-shadow: -5px 0 15px rgba(0, 255, 153, 0.1);
+}
+
+.menu-mobile a {
+  color: #00ff99;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-mobile a:hover {
+  color: #fff;
+}
+
+/* Ativo */
+.menu-mobile.active {
+  display: flex;
+  margin-top: 15px;
+}
+
+/* Transição do ícone (opcional) */
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
 @media screen and (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+    margin-right: 40px;
+  }
 
   .scroll-nav {
     display: none;

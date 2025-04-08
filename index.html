@@ -37,19 +37,35 @@
       <a href="#Contato">Contato</a>
     </nav>
   </header>
-
+  <!-- Menu Mobile (oculto por padrão) -->
+  <nav class="menu-mobile" id="menu-mobile">
+    <a href="#Home">Home</a>
+    <a href="#Sobre">Sobre</a>
+    <a href="#Habilidades">Habilidades</a>
+    <a href="#Experiências">Experiências</a>
+    <a href="#Projetos">Projetos</a>
+    <a href="#Contato">Contato</a>
+  </nav>
   <!-- Scroll header fixo -->
-  <div id="scroll-header" class="scroll-header">
-    <div class="logo">Cristhian</div>
-    <nav class="scroll-nav">
-      <a href="#Home">Home</a>
-      <a href="#Sobre">Sobre</a>
-      <a href="#Habilidades">Habilidades</a>
-      <a href="#Experiências">Experiências</a>
-      <a href="#Projetos">Projetos</a>
-      <a href="#Contato">Contato</a>
-    </nav>
+<div id="scroll-header" class="scroll-header">
+  <div class="logo">Cristhian</div>
+
+  <!-- Botão Hambúrguer (aparece só no mobile) -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
+
+  <nav class="scroll-nav">
+    <a href="#Home">Home</a>
+    <a href="#Sobre">Sobre</a>
+    <a href="#Habilidades">Habilidades</a>
+    <a href="#Experiências">Experiências</a>
+    <a href="#Projetos">Projetos</a>
+    <a href="#Contato">Contato</a>
+  </nav>
+</div>
 
   <!-- Seção Sobre -->
   <section id="Sobre" class="section">
@@ -162,5 +178,6 @@
   <script src="js/typewriter.js"></script>
   <script src="js/headerScroll.js"></script>
   <script src="js/scroll-highlight.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
