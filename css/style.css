@@ -374,13 +374,14 @@ html {
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(3px);
   padding: 20px;
   position: fixed;
-  top: 60px;
+  top: 44px;
   right: 0;
   width: 100%;
-  max-width: 300px;
+  max-width: 150px;
   z-index: 1000;
   border-left: 1px solid #00ff99;
   box-shadow: -5px 0 15px rgba(0, 255, 153, 0.1);
@@ -400,12 +401,74 @@ html {
   display: flex;
   margin-top: 15px;
 }
+/* =================== [FOOTER/FINAL DO SITE] =================== */
+.footer {
+  background-color: #0a0a0a; /* tom um pouco diferente do fundo principal */
+  color: #ccc; /* cor clara, mas discreta */
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  border-top: 1px solid #00ff99; /* linha de destaque com a cor do site */
+  margin-top: 60px;
+}
+
+.footer p {
+  margin: 0;
+}
 
 /* =================== [RESPONSIVIDADE] =================== */
 @media screen and (max-width: 768px) {
+
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    padding-left: 0%;
+  }
+
+  .cargo {
+    font-size: 15px;
+  }
+
+  .empresa {
+    font-size: 15px;
+  }
+
+  .project-list a {
+    color: #00ff99;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .section h2 {
+    color: #00ff99;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .section p {
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.8;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
   .menu-toggle {
     display: flex;
-    margin-right: 40px;
+
   }
 
   .scroll-nav {
@@ -415,7 +478,7 @@ html {
   #Sobre,
   #Experiências,
   #Projetos {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 50px;
   }
 
   .section {
@@ -441,6 +504,7 @@ html {
   }
 
   .header-content {
+    display: flex;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
@@ -451,14 +515,41 @@ html {
 
   .foto-lado {
     position: relative !important;
+    top: auto !important;
+    right: auto !important;
     transform: none !important;
     opacity: 0;
     animation: aparecerFoto 1s ease-out forwards;
-    animation-delay: 1s;
-    margin: 50px auto 0 !important;
-    display: block !important;
-    width: 140px !important;
+    animation-delay: 5s;
+    margin: 30px auto 0 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
     order: 2 !important;
+    width: 100% !important;
+  }
+
+  .moldura-quadrada {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    padding: 8px;
+    background: linear-gradient(145deg, rgba(0, 255, 153, 0.1), rgba(0, 255, 153, 0.25));
+    border: 2px solid #00ff99;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 255, 153, 0.5), inset 0 0 12px rgba(0, 255, 153, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+  }
+
+  .foto-perfil-quadrada {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ff99;
   }
 
   #Contato {
@@ -471,11 +562,15 @@ html {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 6px;
-    font-size: 14px;
+    font-size: 12px;
     word-break: break-word;
   }
 
   .contact-list a {
     max-width: 100%;
+  }
+
+  .intro {
+    
   }
 }
