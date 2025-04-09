@@ -12,7 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* =================== [CABEÇALHO E INTRODUÇÃO] =================== */
+/* =================== [TIPOGRAFIA E INTRODUÇÃO] =================== */
 .main-header {
   display: flex;
   flex-direction: column;
@@ -31,23 +31,12 @@ html {
 .headline,
 .subheadline {
   font-family: 'Orbitron', sans-serif;
-  white-space: normal;            /* permite quebra de linha */
+  white-space: normal;
   word-break: break-word;
   overflow-wrap: break-word;
   width: fit-content;
   margin: 0;
 }
-
-
-/* Animação de digitação com cursor piscando */
-.headline.typing::after,
-.subheadline.typing::after {
-  content: '|';
-  margin-left: 2px;
-  color: #00ff99;
-  animation: blink-caret-fix 1s steps(1) infinite;
-}
-
 
 .headline {
   color: #00ff99;
@@ -59,6 +48,15 @@ html {
   color: #ffffff;
   font-size: 1.5rem;
   letter-spacing: 1px;
+}
+
+/* Animação de digitação com cursor */
+.headline.typing::after,
+.subheadline.typing::after {
+  content: '|';
+  margin-left: 2px;
+  color: #00ff99;
+  animation: blink-caret-fix 1s steps(1) infinite;
 }
 
 /* =================== [NAVEGAÇÃO PRINCIPAL] =================== */
@@ -87,11 +85,11 @@ html {
   color: #00ff99;
 }
 
-.scroll-nav{
+.scroll-nav {
   margin-right: 50px;
 }
 
-/* =================== [SEÇÕES GERAIS DO SITE] =================== */
+/* =================== [SEÇÕES GERAIS] =================== */
 .section {
   padding: 80px 10vw;
   background-color: rgba(0, 0, 0, 0.6);
@@ -189,16 +187,14 @@ html {
   font-size: 1.2rem;
 }
 
-.contact-list a,
-.project-list a {
+.contact-list a {
   color: #00ff99;
   font-weight: bold;
   font-family: 'Orbitron', sans-serif;
   text-decoration: none;
 }
 
-.contact-list a:hover,
-.project-list a:hover {
+.contact-list a:hover {
   text-decoration: underline;
 }
 
@@ -250,7 +246,7 @@ html {
   color: #000;
 }
 
-/* =================== [IMAGEM DO PERFIL LATERAL] =================== */
+/* =================== [IMAGEM DO PERFIL] =================== */
 .header-content {
   display: flex;
   align-items: center;
@@ -299,14 +295,10 @@ html {
   filter: brightness(1.1);
 }
 
-/* =================== [ANIMAÇÕES E CURSORES] =================== */
+/* =================== [ANIMAÇÕES] =================== */
 @keyframes blink-caret-fix {
-  0%, 100% {
-    visibility: hidden;
-  }
-  50% {
-    visibility: visible;
-  }
+  0%, 100% { visibility: hidden; }
+  50% { visibility: visible; }
 }
 
 @keyframes aparecerFoto {
@@ -321,7 +313,6 @@ html {
 }
 
 /* =================== [SCROLL PERSONALIZADO] =================== */
-/* WebKit (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -340,13 +331,12 @@ html {
   background-color: #00cc77;
 }
 
-/* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: #00ff99 transparent;
 }
 
-/* =================== [BOTÃO HAMBÚRGUER] =================== */
+/* =================== [MENU HAMBÚRGUER] =================== */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -367,6 +357,18 @@ html {
   transition: all 0.3s ease;
 }
 
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 .menu-mobile {
   display: none;
   flex-direction: column;
@@ -379,7 +381,6 @@ html {
   right: 0;
   width: 100%;
   max-width: 300px;
-  height: auto;
   z-index: 1000;
   border-left: 1px solid #00ff99;
   box-shadow: -5px 0 15px rgba(0, 255, 153, 0.1);
@@ -395,26 +396,13 @@ html {
   color: #fff;
 }
 
-/* Ativo */
 .menu-mobile.active {
   display: flex;
   margin-top: 15px;
 }
 
-/* Transição do ícone (opcional) */
-.menu-toggle.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.menu-toggle.open span:nth-child(2) {
-  opacity: 0;
-}
-.menu-toggle.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-
+/* =================== [RESPONSIVIDADE] =================== */
 @media screen and (max-width: 768px) {
-
   .menu-toggle {
     display: flex;
     margin-right: 40px;
@@ -429,33 +417,6 @@ html {
   #Projetos {
     scroll-margin-top: 80px;
   }
-  
-  .section h2 {
-    font-size: 24px;
-  }
-
-  .section p,
-  .section li,
-  .job p {
-    font-size: 15px;
-    line-height: 1.6;
-  }
-
-  .headline,
-.subheadline {
-  font-size: 26px;
-  text-align: center;
-  margin: 0;
-  max-width: 90%;
-  width: 100%;
-  padding: 0 10px;
-  box-sizing: border-box;
-  order: 1;
-}
-
-.subheadline {
-  font-size: 20px;
-}
 
   .section {
     border-left: none;
@@ -463,42 +424,29 @@ html {
     padding: 0 15px;
   }
 
-  #Contato {
-    padding: 20px 15px !important;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-
-  .contact-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .contact-list li {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 6px;
-    font-size: 14px;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .contact-list i {
-    flex-shrink: 0;
-    min-width: 16px;
+  .headline,
+  .subheadline {
+    font-size: 26px;
     text-align: center;
+    margin: 0;
+    max-width: 90%;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    order: 1;
   }
 
-  .contact-list a {
-    color: #00ff99;
-    text-decoration: none;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
+  .subheadline {
+    font-size: 20px;
+  }
+
+  .header-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 0 15px;
+    width: 100%;
   }
 
   .foto-lado {
@@ -508,62 +456,26 @@ html {
     animation: aparecerFoto 1s ease-out forwards;
     animation-delay: 1s;
     margin: 50px auto 0 !important;
-    margin-right: 110px !important; /* mantido como você tinha */
     display: block !important;
     width: 140px !important;
-    max-width: 100%;
-    z-index: 1;
     order: 2 !important;
   }
 
-  @keyframes aparecerFotoMobile {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  #Contato {
+    padding: 20px 15px !important;
+    overflow-x: hidden;
   }
 
-  .header-content {
+  .contact-list li {
     display: flex;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+  .contact-list a {
     max-width: 100%;
-    box-sizing: border-box;
   }
-
-  .main-nav,
-  .scroll-nav {
-    display: none;
-  }
-}
-
-/* Header fixo no topo */
-#scroll-header {
-  display: flex !important;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #000;
-  z-index: 1000;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  border-bottom: 1px solid #00ff99;
-}
-
-.logo {
-  color: #00ff99;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-body {
-  padding-top: 60px;
 }

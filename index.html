@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Cabeçalho -->
+
+  <!-- ========== Cabeçalho ========== -->
   <header class="main-header" id="Home">
     <div class="header-content">
       <!-- Foto -->
@@ -27,8 +28,18 @@
       </div>
     </div>
 
-    <!-- Menu de navegação -->
-    <nav class="main-nav">
+    <!-- Menu Desktop -->
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#Home">Home</a>
+      <a href="#Sobre">Sobre</a>
+      <a href="#Habilidades">Habilidades</a>
+      <a href="#Experiências">Experiências</a>
+      <a href="#Projetos">Projetos</a>
+      <a href="#Contato">Contato</a>
+    </nav>
+
+    <!-- Menu Mobile -->
+    <nav class="menu-mobile" id="menu-mobile" aria-label="Navegação mobile">
       <a href="#Home">Home</a>
       <a href="#Sobre">Sobre</a>
       <a href="#Habilidades">Habilidades</a>
@@ -37,37 +48,29 @@
       <a href="#Contato">Contato</a>
     </nav>
   </header>
-  <!-- Menu Mobile (oculto por padrão) -->
-  <nav class="menu-mobile" id="menu-mobile">
-    <a href="#Home">Home</a>
-    <a href="#Sobre">Sobre</a>
-    <a href="#Habilidades">Habilidades</a>
-    <a href="#Experiências">Experiências</a>
-    <a href="#Projetos">Projetos</a>
-    <a href="#Contato">Contato</a>
-  </nav>
-  <!-- Scroll header fixo -->
-<div id="scroll-header" class="scroll-header">
-  <div class="logo">Cristhian</div>
 
-  <!-- Botão Hambúrguer (aparece só no mobile) -->
-  <div class="menu-toggle" id="menu-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
+  <!-- ========== Cabeçalho Fixo ao Rolar ========== -->
+  <div id="scroll-header" class="scroll-header">
+    <div class="logo">Cristhian</div>
+
+    <!-- Botão Hambúrguer (aparece só no mobile) -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="scroll-nav" aria-label="Navegação fixa ao rolar">
+      <a href="#Home">Home</a>
+      <a href="#Sobre">Sobre</a>
+      <a href="#Habilidades">Habilidades</a>
+      <a href="#Experiências">Experiências</a>
+      <a href="#Projetos">Projetos</a>
+      <a href="#Contato">Contato</a>
+    </nav>
   </div>
 
-  <nav class="scroll-nav">
-    <a href="#Home">Home</a>
-    <a href="#Sobre">Sobre</a>
-    <a href="#Habilidades">Habilidades</a>
-    <a href="#Experiências">Experiências</a>
-    <a href="#Projetos">Projetos</a>
-    <a href="#Contato">Contato</a>
-  </nav>
-</div>
-
-  <!-- Seção Sobre -->
+  <!-- ========== Seção Sobre ========== -->
   <section id="Sobre" class="section">
     <h2>Sobre</h2>
     <p>Sou Cristhian Mazon, estudante de Análise e Desenvolvimento de Sistemas em Joinville, atualmente no terceiro semestre pelo Senac. Sempre fui apaixonado por tecnologia, e minha vontade de programar veio dos jogos que marcaram minha infância — hoje, essa curiosidade virou um caminho profissional.</p>
@@ -77,7 +80,7 @@
     <p>Sigo buscando oportunidades na área de TI — seja em desenvolvimento, suporte ou implantação — onde eu possa aplicar meu conhecimento, crescer e fazer a diferença.</p>
   </section>
 
-  <!-- Seção Habilidades -->
+  <!-- ========== Seção Habilidades ========== -->
   <section id="Habilidades" class="section">
     <h2>Habilidades</h2>
     <div class="Habilidades-container">
@@ -89,7 +92,8 @@
       <i class="fas fa-download"></i> Baixar Currículo
     </a>
   </section>
-  <!-- Seção Experiências -->
+
+  <!-- ========== Seção Experiências ========== -->
   <section id="Experiências" class="section">
     <h2>Experiências</h2>
 
@@ -118,7 +122,7 @@
     </div>
   </section>
 
-  <!-- Seção Projetos -->
+  <!-- ========== Seção Projetos ========== -->
   <section id="Projetos" class="section">
     <h2>Projetos</h2>
     <ul class="project-list">
@@ -140,7 +144,7 @@
     </ul>
   </section>
 
-  <!-- Seção Contato -->
+  <!-- ========== Seção Contato ========== -->
   <section id="Contato" class="section">
     <h2>Contato</h2>
     <p>Você pode entrar em contato comigo através dos seguintes canais:</p>
@@ -174,7 +178,7 @@
     </ul>
   </section>
 
-  <!-- Scripts -->
+  <!-- ========== Scripts ========== -->
   <script src="js/typewriter.js"></script>
   <script src="js/headerScroll.js"></script>
   <script src="js/scroll-highlight.js"></script>
