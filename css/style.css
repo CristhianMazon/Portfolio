@@ -418,6 +418,9 @@ html {
 
 /* =================== [RESPONSIVIDADE] =================== */
 @media screen and (max-width: 768px) {
+  * {
+    outline: 1px solid red;
+  }
 
   body {
     overflow-x: hidden;
@@ -515,6 +518,7 @@ html {
     text-align: center !important;
     padding: 0 15px;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .foto-lado {
