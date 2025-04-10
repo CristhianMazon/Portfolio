@@ -419,10 +419,6 @@ html {
 /* =================== [RESPONSIVIDADE] =================== */
 @media screen and (max-width: 768px) {
 
-  body {
-    overflow: hidden;
-  }
-
   .main-header {
     display: flex;
     flex-direction: column;
