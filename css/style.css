@@ -418,9 +418,6 @@ html {
 
 /* =================== [RESPONSIVIDADE] =================== */
 @media screen and (max-width: 768px) {
-  * {
-    outline: 1px solid red;
-  }
 
   body {
     overflow-x: hidden;
