@@ -1,15 +1,24 @@
 const scrollHeader = document.getElementById("scroll-header");
 
-window.addEventListener("scroll", () => {
-  // Só aplica a lógica de mostrar/ocultar no desktop
-  if (window.innerWidth > 768) {
+function handleHeaderVisibility() {
+  const isMobile = window.innerWidth <= 768;
+
+  if (isMobile) {
+    // No mobile, força o header sempre visível
+    scrollHeader.classList.add("visible");
+  } else {
+    // No desktop, mostra o header só após rolar além da tela inicial
     if (window.scrollY > window.innerHeight - 100) {
       scrollHeader.classList.add("visible");
     } else {
       scrollHeader.classList.remove("visible");
     }
-  } else {
-    // No mobile, força o header visível SEM depender da classe "visible"
-    scrollHeader.classList.add("visible");
   }
-});
+}
+
+// Ativa na rolagem
+window.addEventListener("scroll", handleHeaderVisibility);
+// Ativa ao redimensionar (ex: virar o celular ou mudar de desktop pra mobile)
+window.addEventListener("resize", handleHeaderVisibility);
+// Ativa ao carregar a página
+document.addEventListener("DOMContentLoaded", handleHeaderVisibility);
