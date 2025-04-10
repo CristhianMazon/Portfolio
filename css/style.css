@@ -419,6 +419,12 @@ html {
 /* =================== [RESPONSIVIDADE] =================== */
 @media screen and (max-width: 768px) {
 
+  body, html {
+    height: auto !important;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+  }
+
   .main-header {
     display: flex;
     flex-direction: column;
