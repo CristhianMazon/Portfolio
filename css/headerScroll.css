@@ -37,4 +37,11 @@
     font-size: 1.3rem;
     font-weight: bold;
   }
+
+  @media screen and (max-width: 768px) {
+    
+  .scroll-header {
+      transform: translateY(0) !important;
+    }
+  }
   

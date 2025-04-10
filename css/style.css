@@ -419,6 +419,10 @@ html {
 /* =================== [RESPONSIVIDADE] =================== */
 @media screen and (max-width: 768px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
   .main-header {
     display: flex;
     flex-direction: column;
@@ -568,9 +572,5 @@ html {
 
   .contact-list a {
     max-width: 100%;
-  }
-
-  .intro {
-    
   }
 }
