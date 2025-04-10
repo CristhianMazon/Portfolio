@@ -5,7 +5,7 @@ body {
   color: #EAEAEA;
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 html {
@@ -93,7 +93,7 @@ html {
 .section {
   padding: 80px 10vw;
   background-color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 60px;
+  margin-bottom: 0px;
   border-left: 5px solid #00ff99;
   border-right: 5px solid #00ff99;
   border-radius: 10px;
@@ -420,7 +420,7 @@ html {
 @media screen and (max-width: 768px) {
 
   body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .main-header {
