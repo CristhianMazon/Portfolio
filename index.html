@@ -21,29 +21,31 @@
         </div>
       </div>
 
-      <!-- Texto de introdução -->
+      <!-- ========== Texto de introdução ========== -->
       <div class="intro">
         <h1 class="headline" id="typewriter-title"></h1>
         <p class="subheadline" id="typewriter-subtitle"></p>
       </div>
     </div>
 
-    <!-- Menu Desktop -->
+    <!-- ========== Menu Desktop ========== -->
     <nav class="main-nav" aria-label="Navegação principal">
       <a href="#Home">Home</a>
       <a href="#Sobre">Sobre</a>
       <a href="#Habilidades">Habilidades</a>
       <a href="#Experiências">Experiências</a>
+      <a href="#Certificações">Certificações</a>
       <a href="#Projetos">Projetos</a>
       <a href="#Contato">Contato</a>
     </nav>
 
-    <!-- Menu Mobile -->
+    <!-- ========== Menu Mobile ========== -->
     <nav class="menu-mobile" id="menu-mobile" aria-label="Navegação mobile">
       <a href="#Home">Home</a>
       <a href="#Sobre">Sobre</a>
       <a href="#Habilidades">Habilidades</a>
       <a href="#Experiências">Experiências</a>
+      <a href="#Certificações">Certificações</a>
       <a href="#Projetos">Projetos</a>
       <a href="#Contato">Contato</a>
     </nav>
@@ -53,7 +55,7 @@
   <div id="scroll-header" class="scroll-header">
     <div class="logo">Cristhian</div>
 
-    <!-- Botão Hambúrguer (aparece só no mobile) -->
+    <!-- ========== Botão Hambúrguer (aparece só no mobile) ========== -->
     <div class="menu-toggle" id="menu-toggle">
       <span></span>
       <span></span>
@@ -65,6 +67,7 @@
       <a href="#Sobre">Sobre</a>
       <a href="#Habilidades">Habilidades</a>
       <a href="#Experiências">Experiências</a>
+      <a href="#Certificações">Certificações</a>
       <a href="#Projetos">Projetos</a>
       <a href="#Contato">Contato</a>
     </nav>
@@ -84,9 +87,15 @@
   <section id="Habilidades" class="section">
     <h2>Habilidades</h2>
     <div class="Habilidades-container">
-      <div class="Habilidades"><i class="fas fa-code"></i> HTML</div>
-      <div class="Habilidades"><i class="fab fa-css3-alt"></i> CSS</div>
-      <div class="Habilidades"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="Habilidades" onclick="toggleComentario(this, 'Tenho uma boa base e consigo me virar bem com a experiência que já adquiri.')">
+        <i class="fas fa-code"></i> HTML
+      </div>
+      <div class="Habilidades" onclick="toggleComentario(this, 'Ainda em processo de evolução, mas com prática e ajustes consigo construir os layouts.')">
+        <i class="fab fa-css3-alt"></i> CSS
+      </div>
+      <div class="Habilidades" onclick="toggleComentario(this, 'É onde tenho menos experiência, mas com testes e pesquisa consigo fazer o básico funcionar.')">
+        <i class="fab fa-js"></i> JavaScript
+      </div>
     </div>
     <a href="curriculo/Cristhian_Mazon.pdf" target="_blank" class="download-btn">
       <i class="fas fa-download"></i> Baixar Currículo
@@ -121,11 +130,82 @@
       </p>
     </div>
   </section>
+  <!-- ========== Certificações ========== -->
+  <section id="Certificações" class="section">
+    <h2>Certificações</h2>
+    <div class="certificacoes-container">
+      
+      <div class="cert-card" onclick="toggleCert(this)">
+        <div class="cert-header">
+          <i class="fa-solid fa-flag"></i>
+          <span>Capture the Flag - Security Event</span>
+        </div>
+        <div class="cert-info">
+          <p><strong>Instituição:</strong> Cisco / SENAC Hub Tecnologia</p>
+          <p><strong>Emitido em:</strong> Abril de 2025</p>
+          <p><strong>Ver credencial:</strong> 
+            <a href="https://verifycert.ciscoctf.io/verifycert?cid=1c330f4e-9fc1-4a18-b982-6e62fb8031fa" target="_blank">
+              Clique aqui
+            </a>
+          </p>
+        </div>
+      </div>
 
+      <div class="cert-card" onclick="toggleCert(this)">
+        <div class="cert-header">
+          <i class="fa-solid fa-flag-usa"></i>
+          <span>Inglês Proficiency</span>
+        </div>
+        <div class="cert-info">
+          <p><strong>Instituição:</strong> Wizard Joinville-Centro</p>
+          <p><strong>Emitido em:</strong> 16 de agosto de 2023</p>
+          <p><strong>Carga horária:</strong> 140 horas</p>
+          <p><strong>Descrição:</strong> Curso de inglês nível Proficiency com proficiência e desempenho satisfatórios.</p>
+        </div>
+      </div>
+  
+      <div class="cert-card" onclick="toggleCert(this)">
+        <div class="cert-header">
+          <i class="fas fa-network-wired"></i>
+          <span>Networking Academy Learn-A-Thon 2024</span>
+        </div>
+        <div class="cert-info">
+          <p><strong>Instituição:</strong> Cisco</p>
+          <p><strong>Emitido em:</strong> Fevereiro de 2025</p>
+          <p><strong>Ver credencial:</strong> 
+            <a href="https://www.credly.com/badges/d5bde3cb-1c3b-4f6a-9a66-a353a9fb8c7b/linked_in_profile" target="_blank">
+              Clique aqui
+            </a>
+        </div>
+      </div>
+  
+      <div class="cert-card" onclick="toggleCert(this)">
+        <div class="cert-header">
+          <i class="fa-brands fa-python"></i>
+          <span>Python Essentials 1</span>
+        </div>
+        <div class="cert-info">
+          <p><strong>Instituição:</strong> Cisco</p>
+          <p><strong>Emitido em:</strong> Novembro de 2024</p>
+          <p><strong>Ver credencial:</strong> 
+            <a href="https://www.credly.com/badges/37e7c4a9-dc14-4be7-9792-28c0179cb193/linked_in_profile" target="_blank">
+              Clique aqui
+            </a>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
   <!-- ========== Seção Projetos ========== -->
   <section id="Projetos" class="section">
     <h2>Projetos</h2>
     <ul class="project-list">
+      <li>
+        <strong>Palavras Cruzadas em C++</strong><br>
+        <a href="https://github.com/CristhianMazon/As-cruzadas-de-Claudinha.git" target="_blank">github.com/CristhianMazon/As-cruzadas-de-Claudinha</a><br>
+        <span>Jogo criado em C++ para testar habilidades e colocar o conhecimento adquirido a prova.</span>
+      </li>
       <li>
         <strong>Portfólio Pessoal</strong><br>
         <a href="https://github.com/CristhianMazon/Portfolio" target="_blank">github.com/CristhianMazon/Portfolio</a><br>
@@ -186,5 +266,8 @@
   <script src="js/headerScroll.js"></script>
   <script src="js/scroll-highlight.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/habilidades.js"></script>
+  <script src="js/certificacoes.js"></script>
+
 </body>
 </html>

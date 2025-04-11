@@ -140,6 +140,66 @@ html {
   font-style: italic;
   margin-bottom: 10px;
 }
+/* =================== [CERTIFICAÇÕES] =================== */
+.certificacoes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cert-card {
+  border: 1px solid #00ff99;
+  background-color: rgba(0, 255, 153, 0.05);
+  border-radius: 12px;
+  padding: 15px;
+  color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cert-card:hover {
+  background-color: rgba(0, 255, 153, 0.1);
+}
+
+.cert-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #00ff99;
+  font-size: 1rem;
+}
+
+.cert-info {
+  margin-top: 10px;
+  display: none;
+  text-align: left;
+  font-size: 0.9rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.cert-card.active .cert-info {
+  display: block;
+}
+
+.cert-info a {
+  color: #00ff99;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cert-info a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 /* =================== [PROJETOS] =================== */
 .project-list {
@@ -224,6 +284,21 @@ html {
 
 .Habilidades:hover {
   background-color: rgba(0, 255, 153, 0.15);
+  cursor: pointer;
+}
+
+.comentario-habilidade {
+  color: #ccc;
+  font-style: italic;
+  font-size: 0.95rem;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animação suave de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 /* =================== [BOTÃO DE DOWNLOAD] =================== */
