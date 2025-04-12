@@ -32,7 +32,7 @@ pgsql
 Copiar
 Editar
 
-´´´
+```text
 📦 Portfolio
 ├── 📁 curriculo
 │   └── Cristhian_Mazon.pdf
@@ -41,7 +41,7 @@ Editar
 ├── 📄 index.html
 ├── 📄 style.css
 └── 📄 script.js
-´´´
+```
 
 🔗 Acesse o Portfólio Online
 👉 cristhianmazon.github.io/Portfolio
