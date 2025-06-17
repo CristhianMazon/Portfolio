@@ -668,7 +668,7 @@ html {
     transform: none !important;
     opacity: 0;
     animation: aparecerFoto 1s ease-out forwards;
-    animation-delay: 5s;
+    animation-delay: 1.5s;
     margin: 30px auto 0 !important;
     display: flex !important;
     justify-content: center;
