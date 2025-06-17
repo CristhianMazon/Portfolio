@@ -28,20 +28,33 @@ Download do currículo em PDF
 Design moderno com inspiração retrô/futurista
 
 📁 Estrutura de Pastas
-pgsql
-Copiar
-Editar
 
 ```text
 📦 Portfolio
+├── 📁 css
+│   ├── headerScroll.css
+│   └── style.css
 ├── 📁 curriculo
 │   └── Cristhian_Mazon.pdf
-├── 📁 sobre.html
-│   └── index.html (seção 'Sobre')
+├── 📁 img
+│   ├── Eu.png
+│   ├── fundo.png
+│   └── 📁 projetos
+│       ├── As-cruzadas-de-Claudinha.png
+│       ├── ecommerce-api.png
+│       ├── frontend-mini-projects.png
+│       ├── Login.png
+│       └── Portfolio.png
+├── 📁 js
+│   ├── certificacoes.js
+│   ├── Conhecimentos.js
+│   ├── headerScroll.js
+│   ├── menu.js
+│   ├── projetos.js
+│   ├── scroll-highlight.js
+│   └── typewriter.js
 ├── 📄 index.html
-├── 📄 style.css
-└── 📄 script.js
-```
+└── 📄 README.md
 
 🔗 Acesse o Portfólio Online
 👉 cristhianmazon.github.io/Portfolio
