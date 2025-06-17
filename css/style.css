@@ -404,7 +404,7 @@ html {
   transform: translateY(-50%);
   opacity: 0;
   animation: aparecerFoto 1s ease-out forwards;
-  animation-delay: 5.2s;
+  animation-delay: 1.5s;
   z-index: 1;
 }
 

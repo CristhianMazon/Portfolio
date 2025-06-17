@@ -1,4 +1,4 @@
-const title = "Olá, sou o Cristhian Silveira Mazon";
+const title = "Cristhian Silveira Mazon";
 const subtitle = "Estudante de ADS — bem-vindo ao meu portfólio digital";
 
 const titleElement = document.getElementById("typewriter-title");
@@ -15,7 +15,7 @@ function typeTitle() {
   if (i < title.length) {
     titleElement.textContent += title.charAt(i);
     i++;
-    setTimeout(typeTitle, 60);
+    setTimeout(typeTitle, 20);
   } else {
     titleElement.classList.remove("typing");
     setTimeout(() => {
@@ -31,7 +31,7 @@ function typeSubtitle() {
   if (j < subtitle.length) {
     subtitleElement.textContent += subtitle.charAt(j);
     j++;
-    setTimeout(typeSubtitle, 35);
+    setTimeout(typeSubtitle, 10);
   } else {
     subtitleElement.classList.remove("typing");
     fotoContainer.classList.add("show");
