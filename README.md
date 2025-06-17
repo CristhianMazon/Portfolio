@@ -1,47 +1,72 @@
-🌐 Portfólio - Cristhian Silveira Mazon
-Este é o repositório do meu portfólio pessoal, desenvolvido com foco em um visual futurista. Aqui você encontra informações sobre minhas habilidades, experiências, projetos e formas de contato.
+# 🌐 Portfólio — Cristhian Silveira Mazon
 
-🛠️ Tecnologias Utilizadas
-HTML5
+🔗 **Acesse Online:** [Clique aqui](https://cristhianmazon.github.io/Portfolio)
 
-CSS3 (estilização personalizada com animações e responsividade)
+Bem-vindo ao repositório do meu portfólio pessoal!  
+Este projeto foi desenvolvido com o objetivo de apresentar minhas habilidades, experiências, projetos e formas de contato, tudo com um visual moderno de inspiração futurista.
 
-JavaScript (efeitos e interações como animação de digitação e menu hambúrguer)
+---
 
-Fonte: Orbitron
+## 🛠️ Tecnologias Utilizadas
 
-Cores predominantes: #00ff99 (verde neon), preto e tons claros
+- **HTML5**
+- **CSS3** — Estilização personalizada com animações e design responsivo  
+- **JavaScript** — Efeitos visuais, animação de digitação e menu hambúrguer
+- **Fonte:** [Orbitron](https://fonts.google.com/specimen/Orbitron)  
+- **Cores predominantes:** `#00ff99` (verde neon), preto e tons claros
 
-🎯 Funcionalidades
-Site responsivo: funciona perfeitamente em desktops e dispositivos móveis
+---
 
-Animação de digitação na tela inicial
+## 🎯 Funcionalidades
 
-Menu hambúrguer funcional para mobile
+- ✅ Layout 100% responsivo — compatível com desktops e dispositivos móveis  
+- ✅ Animação de digitação na tela inicial  
+- ✅ Menu hambúrguer funcional para dispositivos móveis  
+- ✅ Navegação fluida entre seções: *Home, Sobre, Habilidades, Experiências, Projetos, Contato*  
+- ✅ Download do currículo em PDF  
+- ✅ Ícones personalizados e links com destaque interativo  
+- ✅ Design moderno com uma pegada retrô/futurista
 
-Navegação fluida entre seções (Home, Sobre, Habilidades, Experiências, Projetos, Contato)
+---
 
-Download do currículo em PDF
-
-Ícones e links com destaque personalizado
-
-Design moderno com inspiração retrô/futurista
-
-📁 Estrutura de Pastas
-pgsql
-Copiar
-Editar
+## 📁 Estrutura de Pastas
 
 ```text
 📦 Portfolio
+├── 📁 css
+│   ├── headerScroll.css
+│   └── style.css
 ├── 📁 curriculo
 │   └── Cristhian_Mazon.pdf
-├── 📁 sobre.html
-│   └── index.html (seção 'Sobre')
+├── 📁 img
+│   ├── Eu.png
+│   ├── fundo.png
+│   └── 📁 projetos
+│       ├── As-cruzadas-de-Claudinha.png
+│       ├── ecommerce-api.png
+│       ├── frontend-mini-projects.png
+│       ├── Login.png
+│       └── Portfolio.png
+├── 📁 js
+│   ├── certificacoes.js
+│   ├── Conhecimentos.js
+│   ├── headerScroll.js
+│   ├── menu.js
+│   ├── projetos.js
+│   ├── scroll-highlight.js
+│   └── typewriter.js
 ├── 📄 index.html
-├── 📄 style.css
-└── 📄 script.js
+└── 📄 README.md
 ```
 
-🔗 Acesse o Portfólio Online
-👉 cristhianmazon.github.io/Portfolio
+---
+
+## 📄 Licença
+
+Este projeto é de uso pessoal e educacional. Sinta-se à vontade para se inspirar, mas não copie diretamente sem permissão.
+
+---
+
+## 📬 Contato
+
+📧 **E-mail:** [cristhian.s.mazon@gmail.com](mailto:cristhian.s.mazon@gmail.com)  
