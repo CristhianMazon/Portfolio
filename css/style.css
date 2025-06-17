@@ -249,14 +249,26 @@ html {
 
 .projeto-info {
     margin-top: 10px;
-    display: none; 
+    display: none;
     text-align: left;
     animation: fadeIn 0.3s ease-in-out;
 }
 
 .projeto-card.active .projeto-info {
-    display: block; 
+    display: block;
 }
+
+.projeto-info .projeto-img-preview {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 255, 153, 0.1); 
+    max-height: 200px;
+    object-fit: contain; 
+}
+
 
 .projeto-info p {
     color: #b0b0b0;
