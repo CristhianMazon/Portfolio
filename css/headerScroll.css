@@ -1,0 +1,47 @@
+.scroll-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    color: #00ff99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Orbitron', sans-serif;
+    z-index: 1000;
+  }
+  
+  .scroll-header.visible {
+    transform: translateY(0);
+  }
+  
+  .scroll-nav a {
+    text-decoration: none;
+    color: #00ff99;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: color 0.3s;
+  }
+  
+  .scroll-nav a:hover {
+    color: #ffffff;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 768px) {
+    
+  .scroll-header {
+      transform: translateY(0) !important;
+    }
+  }
+  

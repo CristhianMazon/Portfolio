@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cristhian Mazon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css?v=1.0.1">
+  <link rel="stylesheet" href="css/headerScroll.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== Cabeçalho ========== -->
+  <header class="main-header" id="Home">
+    <div class="header-content">
+      <!-- Foto -->
+      <div class="foto-lado">
+        <div class="moldura-quadrada foto-container">
+          <img src="img/Eu.png" alt="Foto de Cristhian Mazon" class="foto-perfil-quadrada" />
+        </div>
+      </div>
+
+      <!-- ========== Texto de introdução ========== -->
+      <div class="intro">
+        <h1 class="headline" id="typewriter-title"></h1>
+        <p class="subheadline" id="typewriter-subtitle"></p>
+      </div>
+    </div>
+
+    <!-- ========== Menu Desktop ========== -->
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#Home">Home</a>
+      <a href="#Sobre">Sobre</a>
+      <a href="#Conhecimentos">Conhecimentos</a>
+      <a href="#Experiências">Experiências</a>
+      <a href="#Certificações">Certificações</a>
+      <a href="#Projetos">Projetos</a>
+      <a href="#Contato">Contato</a>
+    </nav>
+
+    <!-- ========== Menu Mobile ========== -->
+    <nav class="menu-mobile" id="menu-mobile" aria-label="Navegação mobile">
+      <a href="#Home">Home</a>
+      <a href="#Sobre">Sobre</a>
+      <a href="#Conhecimentos">Conhecimentos</a>
+      <a href="#Experiências">Experiências</a>
+      <a href="#Certificações">Certificações</a>
+      <a href="#Projetos">Projetos</a>
+      <a href="#Contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- ========== Cabeçalho Fixo ao Rolar ========== -->
+  <div id="scroll-header" class="scroll-header">
+    <div class="logo">Cristhian</div>
+
+    <!-- ========== Botão Hambúrguer (aparece só no mobile) ========== -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="scroll-nav" aria-label="Navegação fixa ao rolar">
+      <a href="#Home">Home</a>
+      <a href="#Sobre">Sobre</a>
+      <a href="#Conhecimentos">Conhecimentos</a>
+      <a href="#Experiências">Experiências</a>
+      <a href="#Certificações">Certificações</a>
+      <a href="#Projetos">Projetos</a>
+      <a href="#Contato">Contato</a>
+    </nav>
+  </div>
+
+  <!-- ========== Seção Sobre ========== -->
+  <section id="Sobre" class="section">
+    <h2>Sobre</h2>
+    <p>Sou Cristhian Mazon, estudante de Análise e Desenvolvimento de Sistemas em Joinville, atualmente no terceiro semestre pelo Senac. Sempre fui apaixonado por tecnologia, e minha vontade de programar veio dos jogos que marcaram minha infância — hoje, essa curiosidade virou um caminho profissional.</p>
+    <p>Tenho focado meus estudos em <strong>Java, JavaScript, HTML e CSS</strong>, além de explorar <strong>React, Node.js, Python, PHP e C#</strong>, buscando me tornar um desenvolvedor completo e versátil.</p>
+    <p>Gosto de entender o "porquê" das coisas, aprender rápido, testar na prática e ir além do básico. Valorizo soluções criativas, organizadas e que realmente funcionem.</p>
+    <p>No tempo livre, sou gamer raiz, amante de boas histórias (em filmes, séries ou animes) e me aventuro como criador de conteúdo no YouTube. Também compartilho projetos e estudos quando posso.</p>
+    <p>Sigo buscando oportunidades na área de TI — seja em desenvolvimento, suporte ou implantação — onde eu possa aplicar meu conhecimento, crescer e fazer a diferença.</p>
+  </section>
+
+  <!-- ========== Seção Conhecimentos ========== -->
+  <section id="Conhecimentos" class="section">
+    <h2>Conhecimentos</h2>
+    <div class="Conhecimentos-container">
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Proficiência na estruturação semântica e acessível de páginas web.')">
+            <i class="fas fa-code"></i> HTML
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Habilidade em estilização, layouts responsivos e uso de pré-processadores para design de interfaces.')">
+            <i class="fab fa-css3-alt"></i> CSS
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Familiaridade com manipulação do DOM, lógica interativa e conceitos fundamentais para aplicações web.')">
+            <i class="fab fa-js"></i> JavaScript
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Sólida compreensão de POO, com foco em desenvolvimento back-end e utilização de Spring Boot.')">
+            <i class="fab fa-java"></i> Java
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Em estudo ativo para desenvolvimento web, focando na criação de componentes e interfaces de usuário reativas.')">
+            <i class="fab fa-react"></i> React
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Conhecimento básico em desenvolvimento de APIs e servidores utilizando ambiente de runtime Node.js.')">
+            <i class="fab fa-node-js"></i> Node.js
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Familiaridade com a sintaxe e lógica, aplicada em scripts e automação.')">
+            <i class="fab fa-python"></i> Python
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Noções básicas de desenvolvimento web back-end e manipulação de dados.')">
+            <i class="fab fa-php"></i> PHP
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Em aprendizado, explorando a criação de aplicações e conceitos da plataforma .NET.')">
+            <i class="fab fa-microsoft"></i> C#
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Familiaridade com consultas SQL, modelagem de dados básica e interação com bancos de dados relacionais.')">
+            <i class="fas fa-database"></i> MySQL
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Experiência com versionamento de código, ramificação, mesclagem e colaboração em projetos.')">
+            <i class="fab fa-git-alt"></i> Git/GitHub
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Interesse e estudo em Machine Learning, processamento de dados e aplicação de algoritmos básicos de IA.')">
+            <i class="fas fa-brain"></i> Inteligência Artificial
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Capacidade de diagnosticar e resolver problemas técnicos, garantindo o bom funcionamento de sistemas.')">
+            <i class="fas fa-tools"></i> Suporte Técnico
+        </div>
+        <div class="Conhecimentos" onclick="toggleComentario(this, 'Habilidade em analisar dados, identificar tendências e auxiliar na tomada de decisões estratégicas.')">
+            <i class="fas fa-chart-line"></i> Análise de Dados
+        </div>
+        </div>
+    <a href="curriculo/Cristhian_Mazon.pdf" target="_blank" class="download-btn">
+        <i class="fas fa-download"></i> Baixar Currículo
+    </a>
+  </section>
+
+  <!-- ========== Seção Experiências ========== -->
+  <section id="Experiências" class="section">
+    <h2>Experiências</h2>
+
+    <div class="job">
+      <p>
+        <strong class="empresa">CLAMED Farmácias</strong> · <span class="cargo">Logística</span><br>
+        <em>Outubro de 2022 – Atualmente · Joinville/SC</em><br>
+        Atuo no setor de segregação, realizando conferência de produtos vindos das filiais. Verifico desgaste, validade e lotes, utilizo notas fiscais e sistema interno para dar baixa nos itens. Produtos fora do padrão são devolvidos à filial. A experiência reforça minha atenção, organização e responsabilidade nos processos logísticos.
+      </p>
+    </div>
+
+    <div class="job">
+      <p>
+        <strong class="empresa">Cia. Fabril Lepper</strong> · <span class="cargo">Almoxarife (Aprendiz)</span><br>
+        <em>Março de 2021 – Julho de 2022 · Joinville/SC</em><br>
+        Trabalhei no setor de almoxarifado realizando inventários, atendimento interno, organização de estoque e apoio logístico. Utilizei o sistema Datasul para baixa de produtos e consulta de estoque, sempre buscando entender mais sobre as ferramentas e processos, movido pela curiosidade e vontade de aprender.
+      </p>
+    </div>
+
+    <div class="job">
+      <p>
+        <strong class="empresa">Arteris S.A.</strong> · <span class="cargo">Assistente Administrativo (Aprendiz)</span><br>
+        <em>Outubro de 2019 – Janeiro de 2021 · Joinville/SC</em><br>
+        Atuei de forma versátil, auxiliando com planilhas, formulários e ocorrências. Utilizava o sistema KCOR da KRIA para registrar e acompanhar eventos nas estradas. Tive contato direto com a PRF, sendo ponte entre ela e a equipe. Também assumi pequenas ocorrências de forma autônoma, desenvolvendo responsabilidade e proatividade.
+      </p>
+    </div>
+  </section>
+  <!-- ========== Certificações ========== -->
+  <section id="Certificações" class="section">
+    <h2>Certificações</h2>
+    <div class="certificacoes-container">
+      
+      <div class="cert-card" onclick="toggleCert(this)">
+        <div class="cert-header">
+          <i class="fa-solid fa-flag"></i>
+          <span>Capture the Flag - Security Event</span>
+        </div>
+        <div class="cert-info">
+          <p><strong>Instituição:</strong> Cisco / SENAC Hub Tecnologia</p>
+          <p><strong>Emitido em:</strong> Abril de 2025</p>
+          <p><strong>Ver credencial:</strong> 
+            <a href="https://verifycert.ciscoctf.io/verifycert?cid=1c330f4e-9fc1-4a18-b982-6e62fb8031fa" target="_blank">
+              Clique aqui
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="cert-card" onclick="toggleCert(this)">
+        <div class="cert-header">
+          <i class="fa-solid fa-flag-usa"></i>
+          <span>Inglês Proficiency</span>
+        </div>
+        <div class="cert-info">
+          <p><strong>Instituição:</strong> Wizard Joinville-Centro</p>
+          <p><strong>Emitido em:</strong> 16 de agosto de 2023</p>
+          <p><strong>Carga horária:</strong> 140 horas</p>
+          <p><strong>Descrição:</strong> Curso de inglês nível Proficiency com proficiência e desempenho satisfatórios.</p>
+        </div>
+      </div>
+  
+      <div class="cert-card" onclick="toggleCert(this)">
+        <div class="cert-header">
+          <i class="fas fa-network-wired"></i>
+          <span>Networking Academy Learn-A-Thon 2024</span>
+        </div>
+        <div class="cert-info">
+          <p><strong>Instituição:</strong> Cisco</p>
+          <p><strong>Emitido em:</strong> Fevereiro de 2025</p>
+          <p><strong>Ver credencial:</strong> 
+            <a href="https://www.credly.com/badges/d5bde3cb-1c3b-4f6a-9a66-a353a9fb8c7b/linked_in_profile" target="_blank">
+              Clique aqui
+            </a>
+        </div>
+      </div>
+  
+      <div class="cert-card" onclick="toggleCert(this)">
+        <div class="cert-header">
+          <i class="fa-brands fa-python"></i>
+          <span>Python Essentials 1</span>
+        </div>
+        <div class="cert-info">
+          <p><strong>Instituição:</strong> Cisco</p>
+          <p><strong>Emitido em:</strong> Novembro de 2024</p>
+          <p><strong>Ver credencial:</strong> 
+            <a href="https://www.credly.com/badges/37e7c4a9-dc14-4be7-9792-28c0179cb193/linked_in_profile" target="_blank">
+              Clique aqui
+            </a>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- ========== Seção Projetos ========== -->
+  <section id="Projetos" class="section">
+    <h2>Projetos</h2>
+    <div class="projetos-container">
+        <div class="projeto-card" onclick="toggleProjetoInfo(this)">
+            <div class="projeto-header">
+                <i class="fas fa-code"></i>
+                <span>ecommerce-api</span>
+            </div>
+            <div class="projeto-info">
+                <p><strong>Descrição:</strong> Uma API RESTful para um sistema de e-commerce, construída com Java e Spring Boot.</p>
+                <p><strong>Tecnologias:</strong> Java, Spring Boot, MySQL, Maven</p>
+                <p><strong>Repositório:</strong> <a href="https://github.com/CristhianMazon/ecommerce-api" target="_blank">Clique aqui</a></p>
+            </div>
+        </div>
+
+        <div class="projeto-card" onclick="toggleProjetoInfo(this)">
+            <div class="projeto-header">
+                <i class="fab fa-dev"></i>
+                <span>Palavras Cruzadas em C++</span>
+            </div>
+            <div class="projeto-info">
+                <p><strong>Descrição:</strong> Jogo de palavras cruzadas desenvolvido em C++, utilizando conceitos de lógica de programação e estruturas de dados.</p>
+                <p><strong>Tecnologias:</strong> C++</p>
+                <p><strong>Repositório:</strong> <a href="https://github.com/CristhianMazon/Palavras-Cruzadas-em-C-" target="_blank">Clique aqui</a></p>
+            </div>
+        </div>
+
+        <div class="projeto-card" onclick="toggleProjetoInfo(this)">
+            <div class="projeto-header">
+                <i class="fas fa-desktop"></i>
+                <span>Tela de Login</span>
+            </div>
+            <div class="projeto-info">
+                <p><strong>Descrição:</strong> Uma interface de usuário para tela de login, focada em design responsivo e interatividade.</p>
+                <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+                <p><strong>Repositório:</strong> <a href="https://github.com/CristhianMazon/Tela-Login" target="_blank">Clique aqui</a></p>
+            </div>
+        </div>
+
+        <div class="projeto-card" onclick="toggleProjetoInfo(this)">
+            <div class="projeto-header">
+                <i class="fas fa-laptop-code"></i>
+                <span>Portfólio Pessoal</span>
+            </div>
+            <div class="projeto-info">
+                <p><strong>Descrição:</strong> Este mesmo portfólio, desenvolvido para apresentar minhas habilidades e projetos.</p>
+                <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+                <p><strong>Repositório:</strong> <a href="https://github.com/CristhianMazon/Meu-Portfolio" target="_blank">Clique aqui</a></p>
+            </div>
+        </div>
+
+        <div class="projeto-card" onclick="toggleProjetoInfo(this)">
+            <div class="projeto-header">
+                <i class="fas fa-file-code"></i>
+                <span>frontend-mini-projects</span>
+            </div>
+            <div class="projeto-info">
+                <p><strong>Descrição:</strong> Uma coleção de pequenos projetos frontend para praticar e aprimorar habilidades em HTML, CSS e JavaScript.</p>
+                <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+                <p><strong>Repositório:</strong> <a href="https://github.com/CristhianMazon/frontend-mini-projects" target="_blank">Clique aqui</a></p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- ========== Seção Contato ========== -->
+  <section id="Contato" class="section">
+    <h2>Contato</h2>
+    <p>Você pode entrar em contato comigo através dos seguintes canais:</p>
+    <ul class="contact-list">
+      <li>
+        <i class="fas fa-envelope"></i>
+        <strong>Email:</strong>
+        <a href="mailto:cristhian.s.mazon@gmail.com">cristhian.s.mazon@gmail.com</a>
+      </li>
+      <li>
+        <i class="fab fa-whatsapp"></i>
+        <strong>WhatsApp:</strong>
+        <a href="https://wa.me/5547991328598?text=Ol%C3%A1%2C%20Cristhian!%20Vi%20seu%20portf%C3%B3lio%20e%20fiquei%20interessado%20no%20seu%20trabalho.%20Podemos%20conversar%3F" target="_blank" rel="noopener">
+          (47) 99132-8598
+        </a>
+      </li>
+      <li>
+        <i class="fab fa-linkedin"></i>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/cristhianmazon/" target="_blank" rel="noopener">
+          linkedin.com/in/cristhianmazon
+        </a>
+      </li>
+      <li>
+        <i class="fab fa-github"></i>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/CristhianMazon" target="_blank" rel="noopener">
+          github.com/CristhianMazon
+        </a>
+      </li>
+    </ul>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2025 Cristhian Mazon. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- ========== Scripts ========== -->
+  <script src="js/typewriter.js"></script>
+  <script src="js/headerScroll.js"></script>
+  <script src="js/scroll-highlight.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/Conhecimentos.js"></script>
+  <script src="js/certificacoes.js"></script>
+  <script src="js/projetos.js"></script>
+
+</body>
+</html>
